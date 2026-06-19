@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS ECS Deployment Project</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:800px;
+margin:auto;
+color:#cbd5e1;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:#38bdf8;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+transition:0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.stat{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.stat h2{
+font-size:2.5rem;
+color:#38bdf8;
+}
+
+.architecture{
+background:#111827;
+padding:40px;
+border-radius:15px;
+overflow:auto;
+}
+
+.architecture pre{
+font-size:18px;
+line-height:2;
+color:#38bdf8;
+text-align:center;
+}
+
+.tech{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.tech span{
+background:#38bdf8;
+padding:12px 20px;
+border-radius:25px;
+font-weight:500;
+}
+
+footer{
+background:#020617;
+text-align:center;
+padding:30px;
+color:#94a3b8;
+}
+
+.status{
+color:#22c55e;
+font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="hero">
+<h1>🚀 Containerized <span>Node.js</span> Application</h1>
+
+<p>
+Successfully built and deployed using Docker, Amazon ECR and Amazon ECS Fargate.
+This project demonstrates modern cloud-native application deployment,
+container orchestration and DevOps best practices on AWS.
+</p>
+
+<a href="https://github.com/pawarsanika3130-jpg" class="btn">
+View GitHub Repository
+</a>
+</div>
+</header>
+
+<section>
+<h2 class="section-title">Project Overview</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Docker Containerization</h3>
+<p>Built and packaged the Node.js application into a portable Docker image.</p>
+</div>
+
+<div class="card">
+<h3>Amazon ECR</h3>
+<p>Stored Docker images securely using Amazon Elastic Container Registry.</p>
+</div>
+
+<div class="card">
+<h3>Amazon ECS</h3>
+<p>Managed and deployed containers using Amazon ECS Fargate.</p>
+</div>
+
+<div class="card">
+<h3>AWS Cloud</h3>
+<p>Hosted and managed the application using AWS cloud infrastructure.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Deployment Statistics</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>1</h2>
+<p>Docker Image</p>
+</div>
+
+<div class="stat">
+<h2>1</h2>
+<p>ECR Repository</p>
+</div>
+
+<div class="stat">
+<h2>1</h2>
+<p>ECS Service</p>
+</div>
+
+<div class="stat">
+<h2 class="status">ACTIVE</h2>
+<p>Deployment Status</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Architecture Flow</h2>
+
+<div class="architecture">
+
+<pre>
+Developer Machine
+       │
+       ▼
+Node.js Application
+       │
+       ▼
+Docker Build
+       │
+       ▼
+Amazon ECR
+(Container Registry)
+       │
+       ▼
+Amazon ECS Fargate
+(Container Deployment)
+       │
+       ▼
+Public IP / Load Balancer
+       │
+       ▼
+End Users
+</pre>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Technology Stack</h2>
+
+<div class="tech">
+<span>Node.js</span>
+<span>Express.js</span>
+<span>Docker</span>
+<span>Amazon ECR</span>
+<span>Amazon ECS</span>
+<span>AWS Fargate</span>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Key Learnings</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Containerization</h3>
+<p>Created and managed Docker containers efficiently.</p>
+</div>
+
+<div class="card">
+<h3>Cloud Deployment</h3>
+<p>Deployed scalable applications using AWS ECS Fargate.</p>
+</div>
+
+<div class="card">
+<h3>DevOps Workflow</h3>
+<p>Implemented CI/CD style image management using ECR.</p>
+</div>
+
+<div class="card">
+<h3>Scalable Architecture</h3>
+<p>Leveraged managed AWS services for reliable deployment.</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>Created by Sanika Pawar | Docker • Amazon ECR • Amazon ECS Fargate</p>
+</footer>
+
+</body>
+</html>
